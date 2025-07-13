@@ -1,8 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const [status, setStatus] = useState("");
+
+  // Set default video speed to normal (1x) when component mounts
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const video = document.querySelector('video') as HTMLVideoElement;
+      if (video) {
+        video.playbackRate = 1;
+      }
+    }, 100); // Small delay to ensure video is loaded
+    
+    return () => clearTimeout(timer);
+  }, []);
 
   const setVideoSpeed = (playbackRate: number) => {
     try {
