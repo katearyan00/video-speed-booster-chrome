@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.icon {
+  width: 128px;
+  height: 128px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon::before {
+  content: '▶';
+  position: relative;
+  z-index: 2;
+}
+
+.icon::after {
+  content: '⚡';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  z-index: 3;
+}
+
+.icon16 { width: 16px; height: 16px; font-size: 8px; border-radius: 3px; }
+.icon16::after { font-size: 6px; top: 1px; right: 1px; }
+
+.icon48 { width: 48px; height: 48px; font-size: 20px; border-radius: 8px; }
+.icon48::after { font-size: 12px; top: 3px; right: 3px; }
+</style>
+</head>
+<body>
+<div>
+<h3>128px Icon</h3>
+<div class="icon"></div>
+
+<h3>48px Icon</h3>
+<div class="icon icon48"></div>
+
+<h3>16px Icon</h3>
+<div class="icon icon16"></div>
+</div>
+
+<script>
+// Instructions: Right-click each icon and "Save image as" to create the icon files
+// Or take screenshots and crop them to the exact sizes needed
+console.log("Right-click each icon above and save as PNG files:");
+console.log("- Save 128px version as icon128.png");
+console.log("- Save 48px version as icon48.png"); 
+console.log("- Save 16px version as icon16.png");
+</script>
+</body>
+</html>

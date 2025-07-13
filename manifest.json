@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Video Speed Controller",
+  "version": "1.0",
+  "description": "Quickly control video playback speed with 16x and 1x options",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Video Speed Controller"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
