@@ -7,6 +7,7 @@ const Index = () => {
   const setVideoSpeed = (playbackRate: number) => {
     try {
       const video = document.querySelector('video') as HTMLVideoElement;
+      console.log(video);
       if (!video) {
         setStatus('No video found on this page');
         setTimeout(() => setStatus(''), 2000);

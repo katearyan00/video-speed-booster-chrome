@@ -4,7 +4,8 @@
   "version": "1.0",
   "description": "Quickly control video playback speed with 16x and 1x options",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "scripting"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -15,10 +16,11 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
+    
   ],
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-  }
+"icons": {
+  "16": "icon16.png",
+  "48": "icon48.png",
+  "128": "icon128.png"
+}
 }
