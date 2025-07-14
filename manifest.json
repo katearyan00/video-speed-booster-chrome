@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Video Speed Controller",
   "version": "1.0",
-  "description": "Quickly control video playback speed with 16x and 1x options",
+  "description": "Speed up video playback instantly with one click! Perfect for watching long videos, tutorials, or lectures at 16x speed, then quickly return to normal speed. Works on YouTube, Netflix, and all video sites. Includes keyboard shortcuts (Ctrl+Shift+F for fast, Ctrl+Shift+N for normal).",
   "permissions": [
     "activeTab",
     "scripting"
