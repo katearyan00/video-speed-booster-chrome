@@ -37,6 +37,9 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+<img width="640" height="400" alt="Frame 2" src="https://github.com/user-attachments/assets/d7685be2-6753-495a-af51-e9d5ca814bcc" />
+
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/ebf0d088-414d-4372-ad72-6c2e7bc2cd90) and click on Share -> Publish.
