@@ -1,4 +1,5 @@
 # Video Speed Booster Chrome
+<img width="400" alt="Frame 2" src="https://github.com/user-attachments/assets/d7685be2-6753-495a-af51-e9d5ca814bcc" />
 
 ## Setup Instructions (Chrome Extension)
 
@@ -37,7 +38,7 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-<img width="640" height="400" alt="Frame 2" src="https://github.com/user-attachments/assets/d7685be2-6753-495a-af51-e9d5ca814bcc" />
+
 
 
 ## How can I deploy this project?
