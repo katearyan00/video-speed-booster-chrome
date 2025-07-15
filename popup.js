@@ -47,14 +47,24 @@ document.addEventListener('DOMContentLoaded', function() {
 // This function will be injected into the web page
 function setVideoSpeed(playbackRate) {
   try {
-    const video = document.querySelector('video');
+    let video = document.querySelector('video');
+    if (!video || isNaN(video.duration) || video.readyState === 0) {
+      const videos = document.querySelectorAll('video');
+      for (const v of videos) {
+        if (!isNaN(v.duration) && v.readyState > 0) {
+          video = v;
+          break;
+        }
+      }
+    }
+
     if (!video) {
       return {
         success: false,
-        message: 'No video found on this page'
+        message: 'No usable video element found on this page'
       };
     }
-    
+
     video.playbackRate = playbackRate;
     return {
       success: true,

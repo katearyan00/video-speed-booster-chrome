@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Video Speed Controller",
   "version": "1.0",
-  "description": "Quickly control video playback speed with 16x and 1x options",
+  "description": "Speed up video playback instantly with one click! Perfect for watching long videos, tutorials, or lectures at 16x speed, then quickly return to normal speed. Works on YouTube, Netflix, and all video sites. Includes keyboard shortcuts (Ctrl+Shift+F for fast, Ctrl+Shift+N for normal).",
   "permissions": [
     "activeTab",
     "scripting"
@@ -13,10 +13,30 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*",
+        "https://www.netflix.com/*",
+        "https://netflix.com/*",
+        "https://www.twitch.tv/*",
+        "https://twitch.tv/*",
+        "https://vimeo.com/*",
+        "https://www.vimeo.com/*",
+        "https://www.dailymotion.com/*",
+        "https://dailymotion.com/*",
+        "https://www.hulu.com/*",
+        "https://hulu.com/*",
+        "https://www.amazon.com/*",
+        "https://amazon.com/*",
+        "https://www.disneyplus.com/*",
+        "https://disneyplus.com/*",
+        "https://www.hbo.com/*",
+        "https://hbo.com/*",
+        "https://www.crunchyroll.com/*",
+        "https://crunchyroll.com/*"
+      ],
       "js": ["content.js"]
     }
-    
   ],
 "icons": {
   "16": "icon16.png",
